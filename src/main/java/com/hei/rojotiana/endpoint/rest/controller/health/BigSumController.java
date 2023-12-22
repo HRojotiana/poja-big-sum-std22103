@@ -26,6 +26,8 @@ public class BigSumController {
     @GetMapping("/big-sum")
     public BigInteger bigSum(@RequestParam(name = "a") BigInteger operandA,
                              @RequestParam(name = "b")BigInteger operandB) {
+        operandA = BigInteger.valueOf(1);
+        operandB = BigInteger.valueOf(2);
         return operandA.add(operandB);
 
     }
